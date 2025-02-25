@@ -13,4 +13,4 @@ while True:
         if cv.waitKey(1) != -1:
             break
 
-cv.destroyAllWindows()  
+cv.destroyAllWindows()
