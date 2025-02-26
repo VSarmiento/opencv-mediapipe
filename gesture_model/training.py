@@ -1,4 +1,4 @@
-import mediapipe 
+from mediapipe.model_maker import gesture_recognizer
 
 data = gesture_recognizer.DataLoader.from_folder('gesture_model/reduced_data')
 
