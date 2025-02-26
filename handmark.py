@@ -11,7 +11,7 @@ capture.set(cv.CAP_PROP_FRAME_HEIGHT, 600)
 
 while True:
     success, frame = capture.read()
-
+    frame = cv.flip(frame, 1)
     #Convert b/c OpenCV initially is BGR
     result = hands.process(cv.cvtColor(frame, cv.COLOR_BGR2RGB))
     #Checks the location of the hand
